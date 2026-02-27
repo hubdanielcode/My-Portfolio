@@ -61,7 +61,7 @@ const ContactSection = () => {
             </a>
             <div className="flex items-center gap-2 text-muted-foreground">
               <MapPin size={18} />
-              <span className="text-sm">Brasil</span>
+              <span className="text-sm">Bahia, Brasil</span>
             </div>
           </div>
         </motion.div>
