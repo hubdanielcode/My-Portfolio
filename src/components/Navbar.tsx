@@ -22,7 +22,7 @@ const Navbar = () => {
     >
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
         <a href="#hero" className="font-display text-xl font-bold text-gradient">
-          Portfolio
+          Daniel Lorenzo
         </a>
 
         {/* Desktop */}

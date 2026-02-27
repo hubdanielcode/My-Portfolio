@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Mail, Github, Linkedin, MapPin } from "lucide-react";
+import { Mail, Github, Linkedin, Phone, MapPin } from "lucide-react";
 
 const ContactSection = () => {
   return (
@@ -21,24 +21,39 @@ const ContactSection = () => {
             Estou sempre aberto a novos projetos e oportunidades. Entre em contato e vamos criar algo incrível juntos.
           </p>
 
-          <a
-            href="mailto:seuemail@email.com"
-            className="inline-flex items-center gap-3 px-10 py-4 rounded-lg bg-primary text-primary-foreground font-display font-semibold hover:opacity-90 transition-opacity mb-16"
-          >
-            <Mail size={18} />
-            Enviar Email
-          </a>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
+            <a
+              href="mailto:danlorenzo.of@gmail.com"
+              className="inline-flex items-center gap-3 px-8 py-4 rounded-lg bg-primary text-primary-foreground font-display font-semibold hover:opacity-90 transition-opacity"
+            >
+              <Mail size={18} />
+              Enviar Email
+            </a>
+            <a
+              href="https://wa.me/5571996173547"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-3 px-8 py-4 rounded-lg border border-border text-foreground font-display font-semibold hover:border-primary/50 transition-colors"
+            >
+              <Phone size={18} />
+              WhatsApp
+            </a>
+          </div>
 
           <div className="flex items-center justify-center gap-8">
             <a
-              href="#"
+              href="https://github.com/hubdanielcode"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors duration-300"
               aria-label="GitHub"
             >
               <Github size={22} />
             </a>
             <a
-              href="#"
+              href="https://www.linkedin.com/in/daniellorenzodev/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors duration-300"
               aria-label="LinkedIn"
             >
