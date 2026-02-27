@@ -1,38 +1,16 @@
 import { motion } from "framer-motion";
 import { ExternalLink, Github } from "lucide-react";
+import finanzyScreenshot from "@/assets/finanzy-screenshot.png";
 
 const projects = [
   {
-    title: "E-Commerce Platform",
+    title: "Finanzy App",
     description:
-      "Plataforma completa de e-commerce com carrinho, pagamentos e painel administrativo.",
-    tags: ["React", "Node.js", "PostgreSQL"],
-    link: "#",
-    github: "#",
-  },
-  {
-    title: "Task Management App",
-    description:
-      "Aplicação de gerenciamento de tarefas com drag and drop, filtros e colaboração em tempo real.",
-    tags: ["TypeScript", "Next.js", "Prisma"],
-    link: "#",
-    github: "#",
-  },
-  {
-    title: "Dashboard Analytics",
-    description:
-      "Dashboard interativo com gráficos dinâmicos, relatórios e visualização de dados em tempo real.",
-    tags: ["React", "D3.js", "Tailwind"],
-    link: "#",
-    github: "#",
-  },
-  {
-    title: "Social Media App",
-    description:
-      "Rede social com feed, stories, mensagens diretas e sistema de notificações.",
-    tags: ["React Native", "Firebase", "Redux"],
-    link: "#",
-    github: "#",
+      "Aplicação web de gestão financeira pessoal com controle de receitas e despesas, autenticação segura via JWT, atualização em tempo real e interface totalmente responsiva. Arquitetura organizada por features com Context API e hooks customizados.",
+    tags: ["React", "TypeScript", "CSS3", "Supabase", "Vite", "Vercel"],
+    image: finanzyScreenshot,
+    vercel: "https://finanzy-app.vercel.app",
+    github: "https://github.com/hubdanielcode/Finanzy-App",
   },
 ];
 
@@ -55,49 +33,69 @@ const ProjectsSection = () => {
           </h2>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="flex flex-col gap-12">
           {projects.map((project, i) => (
             <motion.article
               key={project.title}
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="group card-gradient border border-border rounded-xl p-8 hover:border-primary/30 transition-all duration-500 hover:glow-shadow"
+              transition={{ duration: 0.6, delay: i * 0.15 }}
+              className="card-gradient border border-border rounded-2xl overflow-hidden hover:border-primary/30 transition-all duration-500 hover:glow-shadow"
             >
-              <h3 className="font-display text-xl font-semibold text-foreground mb-3 group-hover:text-primary transition-colors">
-                {project.title}
-              </h3>
-              <p className="text-muted-foreground text-sm leading-relaxed mb-6">
-                {project.description}
-              </p>
-
-              <div className="flex flex-wrap gap-2 mb-6">
-                {project.tags.map((tag) => (
-                  <span
-                    key={tag}
-                    className="text-xs px-3 py-1 rounded-full bg-secondary text-secondary-foreground font-medium"
-                  >
-                    {tag}
-                  </span>
-                ))}
+              {/* Screenshot */}
+              <div className="w-full overflow-hidden border-b border-border">
+                <img
+                  src={project.image}
+                  alt={`Screenshot do projeto ${project.title}`}
+                  className="w-full h-auto object-cover"
+                  loading="lazy"
+                />
               </div>
 
-              <div className="flex items-center gap-4">
-                <a
-                  href={project.link}
-                  className="text-muted-foreground hover:text-primary transition-colors"
-                  aria-label="Ver projeto"
-                >
-                  <ExternalLink size={18} />
-                </a>
-                <a
-                  href={project.github}
-                  className="text-muted-foreground hover:text-primary transition-colors"
-                  aria-label="Ver código"
-                >
-                  <Github size={18} />
-                </a>
+              {/* Info */}
+              <div className="p-8 sm:p-10">
+                <h3 className="font-display text-2xl font-bold text-foreground mb-4">
+                  {project.title}
+                </h3>
+
+                <p className="text-muted-foreground leading-relaxed mb-6 max-w-2xl">
+                  {project.description}
+                </p>
+
+                {/* Tags */}
+                <div className="flex flex-wrap gap-2 mb-8">
+                  {project.tags.map((tag) => (
+                    <span
+                      key={tag}
+                      className="text-xs px-3 py-1.5 rounded-full bg-secondary text-secondary-foreground font-medium"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+
+                {/* Links */}
+                <div className="flex items-center gap-4">
+                  <a
+                    href={project.vercel}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-6 py-2.5 rounded-lg bg-primary text-primary-foreground font-display font-semibold text-sm hover:opacity-90 transition-opacity"
+                  >
+                    <ExternalLink size={16} />
+                    Ver Projeto
+                  </a>
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-6 py-2.5 rounded-lg border border-border text-foreground font-display font-semibold text-sm hover:border-primary/50 transition-colors"
+                  >
+                    <Github size={16} />
+                    GitHub
+                  </a>
+                </div>
               </div>
             </motion.article>
           ))}
