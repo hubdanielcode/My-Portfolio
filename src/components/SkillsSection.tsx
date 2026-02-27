@@ -2,16 +2,16 @@ import { motion } from "framer-motion";
 
 const skillCategories = [
   {
-    title: "Frontend",
-    skills: ["React", "TypeScript", "Next.js", "Tailwind CSS", "HTML/CSS"],
+    title: "Linguagens",
+    skills: ["HTML5", "CSS3", "JavaScript", "TypeScript"],
   },
   {
-    title: "Backend",
-    skills: ["Node.js", "Python", "PostgreSQL", "MongoDB", "REST APIs"],
+    title: "Bibliotecas & Frameworks",
+    skills: ["React", "Tailwind CSS", "Framer Motion", "Axios", "Context API"],
   },
   {
     title: "Ferramentas",
-    skills: ["Git", "Docker", "Figma", "VS Code", "Linux"],
+    skills: ["Git", "GitHub", "Vite", "Supabase", "VS Code"],
   },
 ];
 
