@@ -7,7 +7,6 @@ const HeroSection = () => {
       id="hero"
       className="min-h-screen flex flex-col items-center justify-center px-6 relative overflow-hidden"
     >
-      {/* Subtle background glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/5 rounded-full blur-[120px] pointer-events-none" />
 
       <motion.div
@@ -22,13 +21,13 @@ const HeroSection = () => {
           transition={{ delay: 0.3 }}
           className="text-primary font-display text-sm tracking-[0.3em] uppercase mb-6"
         >
-          Desenvolvedor Full Stack
+          Desenvolvedor Front End
         </motion.p>
 
         <h1 className="font-display text-5xl sm:text-7xl lg:text-8xl font-bold leading-[0.95] mb-6">
           <span className="text-foreground">Olá, eu sou</span>
           <br />
-          <span className="text-gradient">Seu Nome</span>
+          <span className="text-gradient">Daniel Lorenzo</span>
         </h1>
 
         <motion.p
