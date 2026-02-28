@@ -33,7 +33,7 @@ const ProjectsSection = () => {
           </h2>
         </motion.div>
 
-        <div className="flex flex-col gap-12 max-w-4xl">
+        <div className="flex flex-col gap-12 max-w-3xl">
           {projects.map((project, i) => (
             <motion.article
               key={project.title}
@@ -44,7 +44,7 @@ const ProjectsSection = () => {
               className="card-gradient border border-border rounded-2xl overflow-hidden hover:border-primary/30 transition-all duration-500 hover:glow-shadow"
             >
               {/* Screenshot */}
-              <div className="w-full overflow-hidden border-b border-border max-h-[350px]">
+              <div className="w-full overflow-hidden border-b border-border max-h-[250px]">
                 <img
                   src={project.image}
                   alt={`Screenshot do projeto ${project.title}`}
@@ -54,12 +54,12 @@ const ProjectsSection = () => {
               </div>
 
               {/* Info */}
-              <div className="p-8 sm:p-10">
+              <div className="p-6 sm:p-8">
                 <h3 className="font-display text-2xl font-bold text-foreground mb-4">
                   {project.title}
                 </h3>
 
-                <p className="text-muted-foreground leading-relaxed mb-6 max-w-2xl">
+                <p className="text-muted-foreground leading-relaxed mb-6 max-w-2xl text-justify">
                   {project.description}
                 </p>
 
