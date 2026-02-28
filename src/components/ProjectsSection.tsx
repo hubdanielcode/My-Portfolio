@@ -33,7 +33,7 @@ const ProjectsSection = () => {
           </h2>
         </motion.div>
 
-        <div className="flex flex-col gap-12 max-w-3xl">
+        <div className="flex flex-col gap-12 max-w-2xl">
           {projects.map((project, i) => (
             <motion.article
               key={project.title}
