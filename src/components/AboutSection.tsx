@@ -36,13 +36,13 @@ const AboutSection = () => {
             Transformando ideias em{" "}
             <span className="text-gradient">realidade digital</span>
           </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl leading-relaxed mb-6">
+          <p className="text-muted-foreground text-lg max-w-2xl leading-relaxed mb-6 text-justify">
             Desenvolvedor Frontend Júnior com foco em React, TypeScript e Tailwind CSS, 
             criando aplicações web modernas, responsivas e orientadas à experiência do usuário. 
             Minha transição da Medicina Veterinária para a tecnologia fortaleceu minha disciplina, 
             pensamento analítico e resolução de problemas.
           </p>
-          <p className="text-muted-foreground text-lg max-w-2xl leading-relaxed mb-16">
+          <p className="text-muted-foreground text-lg max-w-2xl leading-relaxed mb-16 text-justify">
             Atuo em projetos completos com consumo de APIs, gerenciamento de estado, 
             autenticação (Supabase/JWT), componentização escalável e deploy em produção. 
             Experiência com Git, versionamento e boas práticas de colaboração.
