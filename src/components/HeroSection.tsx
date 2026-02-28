@@ -1,7 +1,10 @@
-import { motion } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import { ArrowDown } from "lucide-react";
 
 const HeroSection = () => {
+  const { scrollY } = useScroll();
+  const arrowOpacity = useTransform(scrollY, [0, 150], [1, 0]);
+
   return (
     <section
       id="hero"
@@ -64,6 +67,7 @@ const HeroSection = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.2 }}
+        style={{ opacity: arrowOpacity }}
         className="absolute bottom-10"
       >
         <motion.div
