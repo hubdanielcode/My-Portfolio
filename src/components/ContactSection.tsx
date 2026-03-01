@@ -18,7 +18,7 @@ const ContactSection = () => {
             Vamos <span className="text-gradient">conversar?</span>
           </h2>
           <p className="text-muted-foreground text-lg leading-relaxed mb-12 max-w-lg mx-auto">
-            Estou sempre aberto a novos projetos e oportunidades. Entre em contato e vamos criar algo incrível juntos.
+            Se você tem um projeto ou oportunidade, pode me chamar. Estou aberto a novos desafios.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
