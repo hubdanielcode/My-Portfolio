@@ -15,10 +15,10 @@ const ContactSection = () => {
             Contact
           </p>
           <h2 className="font-display text-3xl sm:text-4xl font-bold text-foreground mb-6">
-            Let's <span className="text-gradient">talk?</span>
+            Send me a <span className="text-gradient">message</span>
           </h2>
           <p className="text-muted-foreground text-lg leading-relaxed mb-12 max-w-lg mx-auto">
-            If you have a project or opportunity, feel free to reach out. I'm open to new challenges.
+            If you have a project or opportunity, feel free to reach out. I'm always open to new challenges.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
