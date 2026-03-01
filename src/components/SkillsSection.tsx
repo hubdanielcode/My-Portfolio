@@ -30,7 +30,7 @@ const SkillsSection = () => {
             Skills
           </p>
           <h2 className="font-display text-3xl sm:text-4xl font-bold text-foreground">
-            Technologies I <span className="text-gradient">master</span>
+            Technologies I have <span className="text-gradient">expertise with</span>
           </h2>
         </motion.div>
 
