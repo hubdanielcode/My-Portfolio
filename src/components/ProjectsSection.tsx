@@ -6,7 +6,7 @@ const projects = [
   {
     title: "Finanzy App",
     description:
-      "Aplicação web de gestão financeira pessoal com controle de receitas e despesas, autenticação segura via JWT, atualização em tempo real e interface totalmente responsiva. Arquitetura organizada por features com Context API e hooks customizados.",
+      "Personal finance management web app with income and expense tracking, secure JWT authentication, real-time updates and a fully responsive interface. Feature-based architecture with Context API and custom hooks.",
     tags: ["React", "TypeScript", "CSS3", "Supabase", "Vite", "Vercel"],
     image: finanzyScreenshot,
     vercel: "https://finanzy-app.vercel.app",
@@ -16,7 +16,7 @@ const projects = [
 
 const ProjectsSection = () => {
   return (
-    <section id="projetos" className="py-32 px-6">
+    <section id="projects" className="py-32 px-6">
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -26,10 +26,10 @@ const ProjectsSection = () => {
           className="mb-16"
         >
           <p className="text-primary font-display text-sm tracking-[0.2em] uppercase mb-3">
-            Projetos
+            Projects
           </p>
           <h2 className="font-display text-3xl sm:text-4xl font-bold text-foreground">
-            Trabalhos <span className="text-gradient">recentes</span>
+            Recent <span className="text-gradient">work</span>
           </h2>
         </motion.div>
 
@@ -47,7 +47,7 @@ const ProjectsSection = () => {
               <div className="w-full overflow-hidden border-b border-border max-h-[250px]">
                 <img
                   src={project.image}
-                  alt={`Screenshot do projeto ${project.title}`}
+                  alt={`Screenshot of ${project.title} project`}
                   className="w-full h-full object-cover object-top"
                   loading="lazy"
                 />
@@ -84,7 +84,7 @@ const ProjectsSection = () => {
                     className="inline-flex items-center gap-2 px-6 py-2.5 rounded-lg bg-primary text-primary-foreground font-display font-semibold text-sm hover:opacity-90 transition-opacity"
                   >
                     <ExternalLink size={16} />
-                    Ver Projeto
+                    View Project
                   </a>
                   <a
                     href={project.github}

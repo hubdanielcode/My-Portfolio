@@ -2,22 +2,22 @@ import { motion } from "framer-motion";
 
 const skillCategories = [
   {
-    title: "Linguagens",
+    title: "Languages",
     skills: ["HTML5", "CSS3", "JavaScript", "TypeScript"],
   },
   {
-    title: "Bibliotecas & Frameworks",
+    title: "Libraries & Frameworks",
     skills: ["React", "Tailwind CSS", "Framer Motion", "Axios", "Context API"],
   },
   {
-    title: "Ferramentas",
+    title: "Tools",
     skills: ["Git", "GitHub", "Vite", "Supabase", "VS Code"],
   },
 ];
 
 const SkillsSection = () => {
   return (
-    <section id="habilidades" className="py-32 px-6">
+    <section id="skills" className="py-32 px-6">
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -27,10 +27,10 @@ const SkillsSection = () => {
           className="mb-16"
         >
           <p className="text-primary font-display text-sm tracking-[0.2em] uppercase mb-3">
-            Habilidades
+            Skills
           </p>
           <h2 className="font-display text-3xl sm:text-4xl font-bold text-foreground">
-            Tecnologias que <span className="text-gradient">domino</span>
+            Technologies I <span className="text-gradient">master</span>
           </h2>
         </motion.div>
 

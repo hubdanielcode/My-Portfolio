@@ -3,11 +3,11 @@ import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 
 const navItems = [
-  { label: "Início", href: "#hero" },
-  { label: "Sobre", href: "#sobre" },
-  { label: "Projetos", href: "#projetos" },
-  { label: "Habilidades", href: "#habilidades" },
-  { label: "Contato", href: "#contato" },
+  { label: "Home", href: "#hero" },
+  { label: "About", href: "#about" },
+  { label: "Projects", href: "#projects" },
+  { label: "Skills", href: "#skills" },
+  { label: "Contact", href: "#contact" },
 ];
 
 const Navbar = () => {

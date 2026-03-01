@@ -3,7 +3,7 @@ import { Mail, Github, Linkedin, Phone, MapPin } from "lucide-react";
 
 const ContactSection = () => {
   return (
-    <section id="contato" className="py-32 px-6">
+    <section id="contact" className="py-32 px-6">
       <div className="max-w-3xl mx-auto text-center">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -12,13 +12,13 @@ const ContactSection = () => {
           transition={{ duration: 0.6 }}
         >
           <p className="text-primary font-display text-sm tracking-[0.2em] uppercase mb-3">
-            Contato
+            Contact
           </p>
           <h2 className="font-display text-3xl sm:text-4xl font-bold text-foreground mb-6">
-            Vamos <span className="text-gradient">conversar?</span>
+            Let's <span className="text-gradient">talk?</span>
           </h2>
           <p className="text-muted-foreground text-lg leading-relaxed mb-12 max-w-lg mx-auto">
-            Se você tem um projeto ou oportunidade, pode me chamar. Estou aberto a novos desafios.
+            If you have a project or opportunity, feel free to reach out. I'm open to new challenges.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
@@ -27,7 +27,7 @@ const ContactSection = () => {
               className="inline-flex items-center gap-3 px-8 py-4 rounded-lg bg-primary text-primary-foreground font-display font-semibold hover:opacity-90 transition-opacity"
             >
               <Mail size={18} />
-              Enviar Email
+              Send Email
             </a>
             <a
               href="https://wa.me/5571996173547"
