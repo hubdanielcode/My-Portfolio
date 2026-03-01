@@ -24,11 +24,11 @@ const HeroSection = () => {
           transition={{ delay: 0.3 }}
           className="text-primary font-display text-sm tracking-[0.3em] uppercase mb-6"
         >
-          Desenvolvedor Front End
+          Front End Developer
         </motion.p>
 
         <h1 className="font-display text-5xl sm:text-7xl lg:text-8xl font-bold leading-[0.95] mb-6">
-          <span className="text-foreground">Olá, eu sou</span>
+          <span className="text-foreground">Hi, I'm</span>
           <br />
           <span className="text-gradient">Daniel Lorenzo</span>
         </h1>
@@ -39,7 +39,7 @@ const HeroSection = () => {
           transition={{ delay: 0.5 }}
           className="text-muted-foreground text-lg sm:text-xl max-w-xl mx-auto mb-10 leading-relaxed"
         >
-          Crio experiências digitais únicas com código limpo, design intuitivo e atenção aos detalhes.
+          I create unique digital experiences with clean code, intuitive design and attention to detail.
         </motion.p>
 
         <motion.div
@@ -49,16 +49,16 @@ const HeroSection = () => {
           className="flex items-center justify-center gap-4"
         >
           <a
-            href="#projetos"
+            href="#projects"
             className="inline-flex items-center gap-2 px-8 py-3 rounded-lg bg-primary text-primary-foreground font-display font-semibold text-sm hover:opacity-90 transition-opacity"
           >
-            Ver Projetos
+            View Projects
           </a>
           <a
-            href="#contato"
+            href="#contact"
             className="inline-flex items-center gap-2 px-8 py-3 rounded-lg border border-border text-foreground font-display font-semibold text-sm hover:border-primary/50 transition-colors"
           >
-            Contato
+            Contact
           </a>
         </motion.div>
       </motion.div>
