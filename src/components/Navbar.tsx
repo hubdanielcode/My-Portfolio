@@ -15,31 +15,37 @@ const Navbar = () => {
 
   return (
     <motion.nav
+      className="fixed top-0 left-0 right-0 z-50 bg-background border-b border-border"
       initial={{ y: -80 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
-      className="fixed top-0 left-0 right-0 z-50 bg-background border-b border-border"
     >
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-        <a href="#hero" className="font-display text-xl font-bold text-gradient">
+        <a
+          className="font-display text-xl font-bold text-gradient"
+          href="#hero"
+        >
           Daniel Lorenzo
         </a>
 
         {/* Desktop */}
+
         <ul className="hidden md:flex items-center gap-8">
           {navItems.map((item) => (
             <li key={item.href}>
-              <a
+              <motion.a
+                className="text-sm text-muted-foreground hover:text-primary transition-colors duration-300 inline-block font-semibold"
                 href={item.href}
-                className="text-sm text-muted-foreground hover:text-primary transition-colors duration-300"
+                whileHover={{ scale: 1.2 }}
               >
                 {item.label}
-              </a>
+              </motion.a>
             </li>
           ))}
         </ul>
 
         {/* Mobile toggle */}
+
         <button
           className="md:hidden text-foreground"
           onClick={() => setIsOpen(!isOpen)}
@@ -50,18 +56,19 @@ const Navbar = () => {
       </div>
 
       {/* Mobile menu */}
+
       {isOpen && (
         <motion.ul
+          className="md:hidden px-6 pb-6 space-y-4 bg-background/95 backdrop-blur-lg"
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
-          className="md:hidden px-6 pb-6 space-y-4 bg-background/95 backdrop-blur-lg"
         >
           {navItems.map((item) => (
             <li key={item.href}>
               <a
+                className="block text-muted-foreground hover:text-primary transition-colors"
                 href={item.href}
                 onClick={() => setIsOpen(false)}
-                className="block text-muted-foreground hover:text-primary transition-colors"
               >
                 {item.label}
               </a>

@@ -8,7 +8,7 @@ import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-transparent relative">
+    <div className="min-h-screen relative select-none">
       <div className="starfield" />
       <div className="relative z-10">
         <Navbar />

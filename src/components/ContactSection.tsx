@@ -3,7 +3,10 @@ import { Mail, Github, Linkedin, Phone, MapPin } from "lucide-react";
 
 const ContactSection = () => {
   return (
-    <section id="contact" className="py-32 px-6">
+    <section
+      id="contact"
+      className="py-32 px-6"
+    >
       <div className="max-w-3xl mx-auto text-center">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -14,26 +17,30 @@ const ContactSection = () => {
           <p className="text-primary font-display text-sm tracking-[0.2em] uppercase mb-3">
             Contact
           </p>
+
           <h2 className="font-display text-3xl sm:text-4xl font-bold text-foreground mb-6">
             Send me a <span className="text-gradient">message</span>
           </h2>
+
           <p className="text-muted-foreground text-lg leading-relaxed mb-12 max-w-lg mx-auto">
-            If you have a project or opportunity, feel free to reach out. I'm always open to new challenges.
+            If you have a project or opportunity, feel free to reach out. I'm
+            always open to new challenges.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
             <a
-              href="mailto:danlorenzo.of@gmail.com"
               className="inline-flex items-center gap-3 px-8 py-4 rounded-lg bg-primary text-primary-foreground font-display font-semibold hover:opacity-90 transition-opacity"
+              href="mailto:danlorenzo.of@gmail.com"
             >
               <Mail size={18} />
               Send Email
             </a>
+
             <a
+              className="inline-flex items-center gap-3 px-8 py-4 rounded-lg border border-border text-foreground font-display font-semibold hover:border-primary/50 transition-colors"
               href="https://wa.me/5571996173547"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-3 px-8 py-4 rounded-lg border border-border text-foreground font-display font-semibold hover:border-primary/50 transition-colors"
             >
               <Phone size={18} />
               WhatsApp
@@ -42,25 +49,28 @@ const ContactSection = () => {
 
           <div className="flex items-center justify-center gap-8">
             <a
+              className="text-muted-foreground hover:text-primary transition-colors duration-300"
               href="https://github.com/hubdanielcode"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-primary transition-colors duration-300"
               aria-label="GitHub"
             >
               <Github size={22} />
             </a>
+
             <a
+              className="text-muted-foreground hover:text-primary transition-colors duration-300"
               href="https://www.linkedin.com/in/daniellorenzodev/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-primary transition-colors duration-300"
               aria-label="LinkedIn"
             >
               <Linkedin size={22} />
             </a>
+
             <div className="flex items-center gap-2 text-muted-foreground">
               <MapPin size={18} />
+
               <span className="text-sm">Bahia, Brasil</span>
             </div>
           </div>

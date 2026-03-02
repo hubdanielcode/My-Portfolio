@@ -16,7 +16,10 @@ const projects = [
 
 const ProjectsSection = () => {
   return (
-    <section id="projects" className="py-32 px-6">
+    <section
+      id="projects"
+      className="py-32 px-6"
+    >
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -39,11 +42,13 @@ const ProjectsSection = () => {
               key={project.title}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
+              whileHover={{ scale: 1.02 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: i * 0.15 }}
+              transition={{ duration: 0.3, delay: i * 0.15 }}
               className="card-gradient border border-border rounded-2xl overflow-hidden hover:border-primary/30 transition-all duration-500 hover:glow-shadow"
             >
               {/* Screenshot */}
+
               <div className="w-full overflow-hidden border-b border-border max-h-[250px]">
                 <img
                   src={project.image}
@@ -54,6 +59,7 @@ const ProjectsSection = () => {
               </div>
 
               {/* Info */}
+
               <div className="p-6 sm:p-8">
                 <h3 className="font-display text-2xl font-bold text-foreground mb-4">
                   {project.title}
@@ -64,11 +70,12 @@ const ProjectsSection = () => {
                 </p>
 
                 {/* Tags */}
+
                 <div className="flex flex-wrap gap-2 mb-8">
                   {project.tags.map((tag) => (
                     <span
-                      key={tag}
                       className="text-xs px-3 py-1.5 rounded-full bg-secondary text-secondary-foreground font-medium"
+                      key={tag}
                     >
                       {tag}
                     </span>
@@ -76,21 +83,22 @@ const ProjectsSection = () => {
                 </div>
 
                 {/* Links */}
+
                 <div className="flex items-center gap-4">
                   <a
+                    className="inline-flex items-center gap-2 px-6 py-2.5 rounded-lg bg-primary text-primary-foreground font-display font-semibold text-sm hover:opacity-90 transition-opacity"
                     href={project.vercel}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-6 py-2.5 rounded-lg bg-primary text-primary-foreground font-display font-semibold text-sm hover:opacity-90 transition-opacity"
                   >
                     <ExternalLink size={16} />
                     View Project
                   </a>
                   <a
+                    className="inline-flex items-center gap-2 px-6 py-2.5 rounded-lg border border-border text-foreground font-display font-semibold text-sm hover:border-primary/50 transition-colors"
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-6 py-2.5 rounded-lg border border-border text-foreground font-display font-semibold text-sm hover:border-primary/50 transition-colors"
                   >
                     <Github size={16} />
                     GitHub
