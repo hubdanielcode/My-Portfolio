@@ -50,14 +50,14 @@ const AboutSection = () => {
             analytical thinking and problem-solving skills.
           </p>
 
-          <p className="text-muted-foreground text-lg max-w-2xl leading-relaxed mb-16 text-justify">
+          <p className="text-muted-foreground text-lg max-w-2xl leading-relaxed mb-6 text-justify">
             I work on complete projects with API consumption, state management,
             authentication (Supabase/JWT), scalable componentization and
             production deployment. Experience with Git, versioning and
             collaboration best practices.
           </p>
 
-          <p className="text-muted-foreground text-lg max-w-2xl leading-relaxed mb-16 text-justify">
+          <p className="text-muted-foreground text-lg max-w-2xl leading-relaxed mb-6 text-justify">
             I am a native Portuguese speaker, fluent in English, with advanced
             proficiency in Spanish and intermediate skills in French.
           </p>
