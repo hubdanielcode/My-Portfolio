@@ -1,73 +1,132 @@
-# Welcome to your Lovable project
+# 🧑‍💻 Daniel Lorenzo | Front End Developer
 
-## Project info
+Personal portfolio showcasing my projects, skills, and professional background as a Front End Developer focused on building modern, responsive and user-centered web applications.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+🔗 Live: https://daniellorenzodev-portfolio.vercel.app/  
+🔗 Repository: https://github.com/hubdanielcode/My-Portfolio
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## 👤 About
 
-**Use Lovable**
+Junior Frontend Developer focused on React, TypeScript and Tailwind CSS, building modern, responsive web applications oriented towards user experience. I value well-structured code, reusable components and interfaces that truly work well in everyday use.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+My transition from Veterinary Medicine to technology strengthened my discipline, analytical thinking and problem-solving skills. I work on complete projects with API consumption, state management, authentication (Supabase/JWT), scalable componentization and production deployment.
 
-Changes made via Lovable will be committed automatically to this repo.
+Native Portuguese speaker, fluent in English, with advanced proficiency in Spanish and intermediate skills in French.
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 📬 Where to Find Me:
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+<p align="center">
+  <a href="https://wa.me/+55719996173547?text=Oi!%20Achei%20seu%20whatsapp%20no%20seu%20perfil%20do%20GitHub!">
+    <img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"/>
+  </a>
+  <a href="https://www.instagram.com/odaniellorenzo">
+    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"/>
+  </a>
+  <a href="https://www.linkedin.com/in/daniellorenzodev/">
+      <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
+  </a>
+  <a href="mailto:danlorenzo.of@gmail.com">
+     <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>
+  </a>
+</p>
 
-Follow these steps:
+## 🗂️ Sections
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+* **Home** — Introduction and tagline
+* **About** — Professional background and core values
+* **Projects** — Featured work with links and tech stack
+* **Skills** — Technologies and tools
+* **Contact** — Email, WhatsApp, GitHub and LinkedIn
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+---
 
-# Step 3: Install the necessary dependencies.
-npm i
+## 📂 Featured Projects
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+### 💰 Finanzy App
+Personal finance management web app with income and expense tracking, secure JWT authentication, real-time updates and a fully responsive interface. Features a financial dashboard with interactive charts (bar, line and pie), dynamic filters by year and period, category breakdowns for income and expenses, feature-based architecture with Context API, custom hooks and an automated test suite with Vitest and React Testing Library.
+
+🔗 https://finanzy-app.vercel.app/  
+🔗 https://github.com/hubdanielcode/Finanzy-App
+
+---
+
+## 🛠️ Technologies Used
+
+**Languages**
+
+* HTML5
+* CSS3
+* JavaScript
+* TypeScript
+
+**Libraries & Frameworks**
+
+* React
+* Tailwind CSS
+* Framer Motion
+* Axios
+* Context API
+* shadcn/ui
+
+**Tools**
+
+* Git & GitHub
+* Vite
+* Supabase
+* VS Code
+* Vercel
+
+---
+
+## ▶️ Running Locally
+
+Clone the repository:
+
+```
+git clone https://github.com/hubdanielcode/My-Portfolio.git
+cd My-Portfolio
+```
+
+Install dependencies:
+
+```
+npm install
+```
+
+Start the development server:
+
+```
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+Access in the browser:
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+```
+http://localhost:5173
+```
 
-**Use GitHub Codespaces**
+---
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 🌍 Deploy
 
-## What technologies are used for this project?
+The portfolio is published on Vercel with:
 
-This project is built with:
+* Automatic deploy via GitHub
+* Optimized production build
+* Custom domain support
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+---
 
-## How can I deploy this project?
+## 📍 Location
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+Bahia, Brasil
 
-## Can I connect a custom domain to my Lovable project?
+---
 
-Yes, you can!
+## 📄 License
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+This project is free for study, learning and personal use.
