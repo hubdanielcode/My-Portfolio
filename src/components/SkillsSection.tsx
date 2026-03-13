@@ -7,11 +7,18 @@ const skillCategories = [
   },
   {
     title: "Libraries & Frameworks",
-    skills: ["React", "Tailwind CSS", "Framer Motion", "Axios", "Context API"],
+    skills: [
+      "React",
+      "Tailwind CSS",
+      "Framer Motion",
+      "Axios",
+      "Context API",
+      "Recharts",
+    ],
   },
   {
     title: "Tools",
-    skills: ["Git", "GitHub", "Vite", "Supabase", "VS Code"],
+    skills: ["Git", "GitHub", "Vite", "Supabase", "Vitest", "VS Code"],
   },
 ];
 

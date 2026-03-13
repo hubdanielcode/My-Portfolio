@@ -6,8 +6,18 @@ const projects = [
   {
     title: "Finanzy App",
     description:
-      "Personal finance management web app with income and expense tracking, secure JWT authentication, real-time updates and a fully responsive interface. Feature-based architecture with Context API and custom hooks.",
-    tags: ["React", "TypeScript", "CSS3", "Supabase", "Vite", "Vercel"],
+      "Personal finance management web app with income and expense tracking, secure JWT authentication, real-time updates and a fully responsive interface. Features an interactive financial dashboard with bar, line and pie charts, dynamic filters by year and period, category breakdowns, feature-based architecture with Context API, custom hooks and an automated test suite.",
+    tags: [
+      "React",
+      "TypeScript",
+      "CSS3",
+      "Tailwind CSS",
+      "Supabase",
+      "Recharts",
+      "Vitest",
+      "Vite",
+      "Vercel",
+    ],
     image: finanzyScreenshot,
     vercel: "https://finanzy-app.vercel.app",
     github: "https://github.com/hubdanielcode/Finanzy-App",
