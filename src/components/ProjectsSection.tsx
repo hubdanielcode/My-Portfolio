@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { ExternalLink, Github } from "lucide-react";
 import finanzyScreenshot from "@/assets/finanzy-screenshot.png";
+import petmatchScreenshot from "@/assets/petmatch-screenshot.png";
 
 const projects = [
   {
@@ -10,10 +11,11 @@ const projects = [
     tags: [
       "React",
       "TypeScript",
-      "CSS3",
       "Tailwind CSS",
       "Supabase",
+      "React Router",
       "Recharts",
+      "Lucide React",
       "Vitest",
       "Vite",
       "Vercel",
@@ -21,6 +23,27 @@ const projects = [
     image: finanzyScreenshot,
     vercel: "https://finanzy-app.vercel.app",
     github: "https://github.com/hubdanielcode/Finanzy-App",
+  },
+
+  {
+    title: "PetMatch App",
+    description:
+      "Pet registration and adoption web app with complete CRUD for pets and tutors, detailed anamnese forms, and an adoption feed with dynamic filters. Features individual pet and tutor profiles, a star rating system, comments, dark/light theme support, feature-based architecture with Context API, custom hooks and an automated test suite.",
+    tags: [
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Supabase",
+      "React Router",
+      "Lucide React",
+      "Framer Motion",
+      "Vitest",
+      "Vite",
+      "Vercel",
+    ],
+    image: petmatchScreenshot,
+    vercel: "https://pet-match-app-nine.vercel.app/",
+    github: "https://github.com/hubdanielcode/PetMatch-App",
   },
 ];
 
@@ -46,26 +69,28 @@ const ProjectsSection = () => {
           </h2>
         </motion.div>
 
-        <div className="flex flex-col gap-12 max-w-xl">
+        <div className="flex gap-12 min-w-2xl">
           {projects.map((project, i) => (
             <motion.article
+              className="card-gradient border border-border rounded-2xl overflow-hidden hover:border-primary/30 transition-all duration-500 hover:glow-shadow"
               key={project.title}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               whileHover={{ scale: 1.02 }}
               viewport={{ once: true }}
               transition={{ duration: 0.3, delay: i * 0.15 }}
-              className="card-gradient border border-border rounded-2xl overflow-hidden hover:border-primary/30 transition-all duration-500 hover:glow-shadow"
             >
               {/* Screenshot */}
 
-              <div className="w-full overflow-hidden border-b border-border max-h-[250px]">
-                <img
-                  src={project.image}
-                  alt={`Screenshot of ${project.title} project`}
-                  className="w-full h-full object-cover object-top"
-                  loading="lazy"
-                />
+              <div className="w-full overflow-hidden border-b border-border max-h-[250px] flex">
+                <div className="w-full overflow-hidden border-b border-border max-h-[250px] flex">
+                  <img
+                    className="w-full h-full object-cover object-top"
+                    src={project.image}
+                    alt={`Screenshot of ${project.title} project`}
+                    loading="lazy"
+                  />
+                </div>
               </div>
 
               {/* Info */}
