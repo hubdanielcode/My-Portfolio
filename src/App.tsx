@@ -1,32 +1,35 @@
-import { Toaster } from "@/components/ui/toaster";
-import { Toaster as Sonner } from "@/components/ui/sonner";
-import { TooltipProvider } from "@/components/ui/tooltip";
+import { Toaster } from "@/features/portfolio/ui/toaster";
+import { Toaster as Sonner } from "@/features/portfolio/ui/sonner";
+import { TooltipProvider } from "@/features/portfolio/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Index from "./pages/Index";
-import NotFound from "./pages/NotFound";
+import { MainPage } from "./features/portfolio/pages/MainPage";
+import { Missing } from "./features/portfolio/pages/Missing";
+import { LanguageProvider } from "./features/portfolio/locales/context/LanguageContext";
 
 const queryClient = new QueryClient();
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
-        <Routes>
-          <Route
-            path="/"
-            element={<Index />}
-          />
+    <LanguageProvider>
+      <TooltipProvider>
+        <Toaster />
+        <Sonner />
+        <BrowserRouter>
+          <Routes>
+            <Route
+              path="/"
+              element={<MainPage />}
+            />
 
-          <Route
-            path="*"
-            element={<NotFound />}
-          />
-        </Routes>
-      </BrowserRouter>
-    </TooltipProvider>
+            <Route
+              path="*"
+              element={<Missing />}
+            />
+          </Routes>
+        </BrowserRouter>
+      </TooltipProvider>
+    </LanguageProvider>
   </QueryClientProvider>
 );
 
