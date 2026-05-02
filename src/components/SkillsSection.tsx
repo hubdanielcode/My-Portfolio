@@ -14,11 +14,22 @@ const skillCategories = [
       "Axios",
       "Context API",
       "Recharts",
+      "React Router",
+      "Monaco Editor",
+      "React Image Crop",
     ],
   },
   {
     title: "Tools",
-    skills: ["Git", "GitHub", "Vite", "Supabase", "Vitest", "VS Code"],
+    skills: [
+      "Git",
+      "GitHub",
+      "Vite",
+      "Supabase",
+      "Vitest",
+      "VS Code",
+      "Vercel",
+    ],
   },
 ];
 

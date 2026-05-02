@@ -36,17 +36,18 @@ Native Portuguese speaker, fluent in English, with advanced proficiency in Spani
 
 ## 🗂️ Sections
 
-* **Home** — Introduction and tagline
-* **About** — Professional background and core values
-* **Projects** — Featured work with links and tech stack
-* **Skills** — Technologies and tools
-* **Contact** — Email, WhatsApp, GitHub and LinkedIn
+- **Home** — Introduction and tagline
+- **About** — Professional background and core values
+- **Projects** — Featured work with links and tech stack
+- **Skills** — Technologies and tools
+- **Contact** — Email, WhatsApp, GitHub and LinkedIn
 
 ---
 
 ## 📂 Featured Projects
 
 ### 💰 Finanzy App
+
 Personal finance management web app with income and expense tracking, secure JWT authentication, real-time updates and a fully responsive interface. Features a financial dashboard with interactive charts (bar, line and pie), dynamic filters by year and period, category breakdowns for income and expenses, feature-based architecture with Context API, custom hooks and an automated test suite with Vitest and React Testing Library.
 
 🔗 https://finanzy-app.vercel.app/  
@@ -54,79 +55,18 @@ Personal finance management web app with income and expense tracking, secure JWT
 
 ---
 
-## 🛠️ Technologies Used
+### 🐾 PetchMatch App
 
-**Languages**
+Pet registration and adoption web app with complete CRUD for pets and tutors, detailed anamnese forms, and an adoption feed with dynamic filters. Features individual pet and tutor profiles, a star rating system, comments, dark/light theme support, feature-based architecture with Context API, custom hooks and an automated test suite.
 
-* HTML5
-* CSS3
-* JavaScript
-* TypeScript
-
-**Libraries & Frameworks**
-
-* React
-* Tailwind CSS
-* Framer Motion
-* Axios
-* Context API
-* shadcn/ui
-
-**Tools**
-
-* Git & GitHub
-* Vite
-* Supabase
-* VS Code
-* Vercel
+🔗 Deploy: https://pet-match-app-nine.vercel.app/
+🔗 Repositório: https://github.com/hubdanielcode/PetMatch-App
 
 ---
 
-## ▶️ Running Locally
+### 🤖 Codara AI App
 
-Clone the repository:
+AI-powered code analysis web app that detects errors, suggests best practices and generates corrected code automatically. Features secure authentication, per-user chat history, patch tracking system, dark/light theme and a feature-based architecture with Context API, custom hooks and automated tests with Vitest and React Testing Library.
 
-```
-git clone https://github.com/hubdanielcode/My-Portfolio.git
-cd My-Portfolio
-```
-
-Install dependencies:
-
-```
-npm install
-```
-
-Start the development server:
-
-```
-npm run dev
-```
-
-Access in the browser:
-
-```
-http://localhost:5173
-```
-
----
-
-## 🌍 Deploy
-
-The portfolio is published on Vercel with:
-
-* Automatic deploy via GitHub
-* Optimized production build
-* Custom domain support
-
----
-
-## 📍 Location
-
-Bahia, Brasil
-
----
-
-## 📄 License
-
-This project is free for study, learning and personal use.
+🔗 Deploy: https://codara-ai.vercel.app/
+🔗 Repositório: https://github.com/hubdanielcode/Codara-AI
