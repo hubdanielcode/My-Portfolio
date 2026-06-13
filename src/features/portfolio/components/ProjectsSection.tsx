@@ -15,12 +15,14 @@ const tags = [
     "Tailwind CSS",
     "Supabase",
     "React Router",
+    "Framer Motion",
     "Recharts",
     "Lucide React",
     "Vitest",
     "Vite",
     "Vercel",
   ],
+
   [
     "React",
     "TypeScript",
@@ -33,6 +35,7 @@ const tags = [
     "Vite",
     "Vercel",
   ],
+
   [
     "React",
     "TypeScript",
@@ -108,8 +111,6 @@ const ProjectsSection = () => {
       id="projects"
     >
       <div className="max-w-6xl mx-auto">
-        {/* - Heading - */}
-
         <motion.div
           className="mb-16"
           initial={{ opacity: 0, y: 30 }}
@@ -129,10 +130,10 @@ const ProjectsSection = () => {
           </h2>
         </motion.div>
 
-        {/* - Carousel wrapper with side arrows - */}
+        {/* - Carrossel de projetos - */}
 
         <div className="flex items-center gap-4">
-          {/* - Arrow Left - */}
+          {/* - Projeto anterior - */}
 
           <button
             className="shrink-0 p-2.5 rounded-lg border border-border text-foreground hover:border-primary/50 hover:text-primary transition-colors disabled:opacity-30 disabled:cursor-not-allowed"
@@ -159,9 +160,9 @@ const ProjectsSection = () => {
                 exit="exit"
                 transition={{ duration: 1, ease: "easeInOut" }}
               >
-                {/* - Screenshot - */}
+                {/* - Foto - */}
 
-                <div className="w-full overflow-hidden border-b border-border max-h-[250px] flex">
+                <div className="w-full overflow-hidden border-b border-border max-h-62.5 flex">
                   <img
                     className="w-full h-full object-cover object-top"
                     src={images[index]}
@@ -170,7 +171,7 @@ const ProjectsSection = () => {
                   />
                 </div>
 
-                {/* - Info - */}
+                {/* - Informações - */}
 
                 <div className="p-6 sm:p-8">
                   <h3 className="font-display text-2xl font-bold text-foreground mb-4">
@@ -222,7 +223,7 @@ const ProjectsSection = () => {
             </AnimatePresence>
           </div>
 
-          {/* - Arrow Right - */}
+          {/* - Próximo projeto - */}
 
           <button
             className="shrink-0 p-2.5 rounded-lg border border-border text-foreground hover:border-primary/50 hover:text-primary transition-colors disabled:opacity-30 disabled:cursor-not-allowed"
@@ -233,7 +234,7 @@ const ProjectsSection = () => {
           </button>
         </div>
 
-        {/* - Dots - */}
+        {/* - Array de projetos - */}
 
         <div className="flex justify-center gap-2 mt-8">
           {translations.projects.list.map((_, dotIndex) => (

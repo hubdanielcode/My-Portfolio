@@ -12,7 +12,7 @@ const HeroSection = () => {
       className="min-h-screen flex flex-col items-center justify-center px-6 relative overflow-hidden"
       id="hero"
     >
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-transparent rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-150 h-150 bg-transparent rounded-full blur-[120px] pointer-events-none" />
 
       <motion.div
         className="text-center max-w-3xl relative z-10"
