@@ -1,10 +1,12 @@
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import { useLanguageContext } from "../locales/hooks/useLanguageContext";
 
 const skills = [
   ["HTML5", "CSS3", "JavaScript", "TypeScript"],
+
   [
     "React",
+    "Next.js",
     "Tailwind CSS",
     "Framer Motion",
     "Axios",
@@ -13,8 +15,11 @@ const skills = [
     "React Router",
     "Monaco Editor",
     "React Image Crop",
+    "Lucide React",
+    "Zod",
   ],
-  ["Git", "GitHub", "Vite", "Supabase", "Vitest", "VS Code", "Vercel"],
+
+  ["Git", "GitHub", "Vite", "Supabase", "Prisma", "PostgreSQL", "React Testing Library", "Vitest", "Vercel"],
 ];
 
 const SkillsSection = () => {
@@ -33,15 +38,10 @@ const SkillsSection = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <p className="text-primary font-display text-sm tracking-[0.2em] uppercase mb-3">
-            {translations.skills.tag}
-          </p>
+          <p className="text-primary font-display text-sm tracking-[0.2em] uppercase mb-3">{translations.skills.tag}</p>
 
           <h2 className="font-display text-3xl sm:text-4xl font-bold text-foreground">
-            {translations.skills.title}{" "}
-            <span className="text-gradient">
-              {translations.skills.titleHighlight}
-            </span>
+            {translations.skills.title} <span className="text-gradient">{translations.skills.titleHighlight}</span>
           </h2>
         </motion.div>
 
@@ -56,9 +56,7 @@ const SkillsSection = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.3, delay: index * 0.15 }}
             >
-              <h3 className="font-display text-lg font-semibold text-primary mb-6">
-                {category.title}
-              </h3>
+              <h3 className="font-display text-lg font-semibold text-primary mb-6">{category.title}</h3>
 
               <div className="flex flex-wrap gap-3">
                 {skills[index].map((skill) => (

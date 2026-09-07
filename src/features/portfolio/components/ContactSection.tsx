@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import { Mail, Github, Linkedin, Phone, MapPin } from "lucide-react";
 import { useLanguageContext } from "../locales/hooks/useLanguageContext";
 

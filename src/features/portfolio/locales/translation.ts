@@ -17,8 +17,7 @@ export const translations = {
     hero: {
       tag: "Front End Developer",
       greeting: "Hi, I'm",
-      subtitle:
-        "I create unique digital experiences with clean code, intuitive design and attention to detail.",
+      subtitle: "I create unique digital experiences with clean code, intuitive design and attention to detail.",
       cta: "View Projects",
       contact: "Contact",
     },
@@ -61,15 +60,23 @@ export const translations = {
           description:
             "Personal finance management web app with income and expense tracking, secure JWT authentication, real-time updates and a fully responsive interface. Features an interactive financial dashboard with bar, line and pie charts, dynamic filters by year and period, category breakdowns, feature-based architecture with Context API, custom hooks and an automated test suite.",
         },
+
         {
           title: "PetMatch App",
           description:
             "Pet registration and adoption web app with complete CRUD for pets and tutors, detailed anamnese forms, and an adoption feed with dynamic filters. Features individual pet and tutor profiles, a star rating system, comments, dark/light theme support, feature-based architecture with Context API, custom hooks and an automated test suite.",
         },
+
         {
           title: "Codara AI App",
           description:
             "AI-powered code analysis web app that detects errors, suggests best practices and generates corrected code automatically. Features secure authentication, per-user chat history, patch tracking system, dark/light theme and a feature-based architecture with Context API, custom hooks and automated tests with Vitest and React Testing Library.",
+        },
+
+        {
+          title: "QuizNight App",
+          description:
+            "Interactive quiz web app with trivia questions about games, movies and music, combining a category-selection wheel, timed multiple-choice rounds and a scoring system. Features server-persisted game sessions, dynamic question generation from external APIs (RAWG, TMDB and Deezer), full-stack architecture with Server Actions, Prisma and PostgreSQL, data validation with Zod and an automated test suite with Vitest and React Testing Library.",
         },
       ],
     },
@@ -99,8 +106,7 @@ export const translations = {
       tag: "Contact",
       title: "Send me a",
       titleHighlight: "message",
-      subtitle:
-        "If you have a project or opportunity, feel free to reach out. I'm always open to new challenges.",
+      subtitle: "If you have a project or opportunity, feel free to reach out. I'm always open to new challenges.",
       email: "Send Email",
       whatsapp: "WhatsApp",
     },
@@ -130,8 +136,7 @@ export const translations = {
     hero: {
       tag: "Desenvolvedor Front End",
       greeting: "Olá, sou",
-      subtitle:
-        "Crio experiências digitais únicas com código limpo, design intuitivo e atenção aos detalhes.",
+      subtitle: "Crio experiências digitais únicas com código limpo, design intuitivo e atenção aos detalhes.",
       cta: "Ver Projetos",
       contact: "Contato",
     },
@@ -148,18 +153,15 @@ export const translations = {
       highlights: [
         {
           title: "Código Limpo",
-          description:
-            "Escrevo código organizado, escalável e fácil de manter.",
+          description: "Escrevo código organizado, escalável e fácil de manter.",
         },
         {
           title: "Design Intuitivo",
-          description:
-            "Interfaces bonitas que proporcionam uma ótima experiência.",
+          description: "Interfaces bonitas que proporcionam uma ótima experiência.",
         },
         {
           title: "Performance",
-          description:
-            "Aplicações rápidas e otimizadas para qualquer dispositivo.",
+          description: "Aplicações rápidas e otimizadas para qualquer dispositivo.",
         },
       ],
     },
@@ -177,15 +179,23 @@ export const translations = {
           description:
             "Aplicação web de gestão de finanças pessoais com registro de receitas e despesas, autenticação segura via JWT, atualizações em tempo real e interface totalmente responsiva. Conta com dashboard financeiro interativo com gráficos de barras, linhas e pizza, filtros dinâmicos por ano e período, categorização de gastos, arquitetura baseada em features com Context API, custom hooks e suite de testes automatizados.",
         },
+
         {
           title: "PetMatch App",
           description:
             "Aplicação web de cadastro e adoção de pets com CRUD completo para animais e tutores, formulários detalhados de anamnese e feed de adoção com filtros dinâmicos. Conta com perfis individuais de pets e tutores, sistema de avaliação por estrelas, comentários, suporte a tema claro/escuro, arquitetura baseada em features com Context API, custom hooks e suite de testes automatizados.",
         },
+
         {
           title: "Codara AI App",
           description:
             "Aplicação web de análise de código com IA que detecta erros, sugere boas práticas e gera código corrigido automaticamente. Conta com autenticação segura, histórico de chat por usuário, sistema de rastreamento de patches, tema claro/escuro e arquitetura baseada em features com Context API, custom hooks e testes automatizados com Vitest e React Testing Library.",
+        },
+
+        {
+          title: "QuizNight App",
+          description:
+            "Aplicação web de quiz interativo com perguntas sobre jogos, filmes e músicas, combinando roleta de categorias, perguntas de múltipla escolha, tempo limite por rodada e sistema de pontuação. Conta com sessões de jogo persistidas no servidor, geração dinâmica de perguntas a partir de APIs externas (RAWG, TMDB e Deezer), arquitetura full-stack com Server Actions, Prisma e PostgreSQL, validação de dados com Zod e suite de testes automatizados com Vitest e React Testing Library.",
         },
       ],
     },
@@ -215,8 +225,7 @@ export const translations = {
       tag: "Contato",
       title: "Me manda uma",
       titleHighlight: "mensagem",
-      subtitle:
-        "Se você tem um projeto ou oportunidade, fique à vontade para entrar em contato. Estou sempre aberto a novos desafios.",
+      subtitle: "Se você tem um projeto ou oportunidade, fique à vontade para entrar em contato. Estou sempre aberto a novos desafios.",
       email: "Enviar Email",
       whatsapp: "WhatsApp",
     },

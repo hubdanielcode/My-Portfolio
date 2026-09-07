@@ -1,40 +1,24 @@
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence } from "motion/react";
 import { ExternalLink, Github, ChevronLeft, ChevronRight } from "lucide-react";
 import { useState } from "react";
 import { useLanguageContext } from "../locales/hooks/useLanguageContext";
 import finanzyScreenshot from "@/assets/finanzy-screenshot.png";
 import petmatchScreenshot from "@/assets/petmatch-screenshot.png";
 import codaraScreenshot from "@/assets/codara-screenshot.png";
+import quiznightScreenshot from "@/assets/quizinight-screenshot.png";
 
-const images = [finanzyScreenshot, petmatchScreenshot, codaraScreenshot];
+const images = [finanzyScreenshot, petmatchScreenshot, codaraScreenshot, quiznightScreenshot];
 
 const tags = [
-  [
-    "React",
-    "TypeScript",
-    "Tailwind CSS",
-    "Supabase",
-    "React Router",
-    "Framer Motion",
-    "Recharts",
-    "Lucide React",
-    "Vitest",
-    "Vite",
-    "Vercel",
-  ],
+  /* - Finanzy - */
 
-  [
-    "React",
-    "TypeScript",
-    "Tailwind CSS",
-    "Supabase",
-    "React Router",
-    "Lucide React",
-    "Framer Motion",
-    "Vitest",
-    "Vite",
-    "Vercel",
-  ],
+  ["React", "TypeScript", "Tailwind CSS", "Supabase", "React Router", "Framer Motion", "Recharts", "Lucide React", "Vitest", "Vite", "Vercel"],
+
+  /* - PetMatch - */
+
+  ["React", "TypeScript", "Tailwind CSS", "Supabase", "React Router", "Lucide React", "Framer Motion", "Vitest", "Vite", "Vercel"],
+
+  /* - CodaraAI - */
 
   [
     "React",
@@ -51,20 +35,39 @@ const tags = [
     "Vite",
     "Vercel",
   ],
+
+  /* - QuizNight - */
+
+  ["Next.js", "React", "TypeScript", "Tailwind CSS", "Prisma", "PostgreSQL", "Supabase", "Zod", "Motion", "Lucide React", "Vitest", "Vercel"],
 ];
 
 const links = [
+  /* - Finanzy - */
+
   {
     vercel: "https://finanzy-app.vercel.app",
     github: "https://github.com/hubdanielcode/Finanzy-App",
   },
+
+  /* - PetMatch - */
+
   {
     vercel: "https://pet-match-app-nine.vercel.app/",
     github: "https://github.com/hubdanielcode/PetMatch-App",
   },
+
+  /* - CodaraAI - */
+
   {
     vercel: "https://codara-ai.vercel.app/",
     github: "https://github.com/hubdanielcode/Codara-AI",
+  },
+
+  /* - QuizNight - */
+
+  {
+    vercel: "https://quiz-night-nine.vercel.app/",
+    github: "https://github.com/hubdanielcode/QuizNight",
   },
 ];
 
@@ -118,15 +121,10 @@ const ProjectsSection = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <p className="text-primary font-display text-sm tracking-[0.2em] uppercase mb-3">
-            {translations.projects.tag}
-          </p>
+          <p className="text-primary font-display text-sm tracking-[0.2em] uppercase mb-3">{translations.projects.tag}</p>
 
           <h2 className="font-display text-3xl sm:text-4xl font-bold text-foreground">
-            {translations.projects.title}{" "}
-            <span className="text-gradient">
-              {translations.projects.titleHighlight}
-            </span>
+            {translations.projects.title} <span className="text-gradient">{translations.projects.titleHighlight}</span>
           </h2>
         </motion.div>
 
@@ -174,13 +172,9 @@ const ProjectsSection = () => {
                 {/* - Informações - */}
 
                 <div className="p-6 sm:p-8">
-                  <h3 className="font-display text-2xl font-bold text-foreground mb-4">
-                    {project.title}
-                  </h3>
+                  <h3 className="font-display text-2xl font-bold text-foreground mb-4">{project.title}</h3>
 
-                  <p className="text-muted-foreground leading-relaxed mb-6 text-justify">
-                    {project.description}
-                  </p>
+                  <p className="text-muted-foreground leading-relaxed mb-6 text-justify">{project.description}</p>
 
                   {/* - Tags - */}
 
@@ -239,9 +233,7 @@ const ProjectsSection = () => {
         <div className="flex justify-center gap-2 mt-8">
           {translations.projects.list.map((_, dotIndex) => (
             <button
-              className={`h-2 rounded-full transition-all duration-300 ${
-                dotIndex === index ? "bg-primary w-5" : "bg-border w-2"
-              }`}
+              className={`h-2 rounded-full transition-all duration-300 ${dotIndex === index ? "bg-primary w-5" : "bg-border w-2"}`}
               key={dotIndex}
               onClick={() => {
                 setDirection(dotIndex > index ? 1 : -1);

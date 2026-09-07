@@ -1,13 +1,13 @@
 import { createContext, ReactNode, useState } from "react";
 import { translations } from "../translation";
 
-interface LanguageContnextType {
+interface LanguageContextType {
   language: "en-US" | "pt-BR";
   setLanguage: (language: "en-US" | "pt-BR") => void;
   translations: typeof translations.en;
 }
 
-const LanguageContext = createContext<LanguageContnextType | null>(null);
+const LanguageContext = createContext<LanguageContextType | null>(null);
 
 const LanguageProvider = ({ children }: { children: ReactNode }) => {
   const [language, setLanguage] = useState<"en-US" | "pt-BR">("en-US");

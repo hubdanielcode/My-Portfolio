@@ -70,3 +70,12 @@ AI-powered code analysis web app that detects errors, suggests best practices an
 
 🔗 Deploy: https://codara-ai.vercel.app/
 🔗 Repository: https://github.com/hubdanielcode/Codara-AI
+
+---
+
+### 🎮 QuizNight App
+
+Interactive quiz web app with trivia questions about games, movies and music, built with Next.js and TypeScript. Features a category-selection wheel, timed multiple-choice rounds, a scoring system and server-persisted game sessions, with question data pulled dynamically from the RAWG, TMDB and Deezer APIs. Full-stack architecture with Server Actions, Prisma/PostgreSQL, Zod validation and an automated test suite with Vitest and React Testing Library.
+
+🔗 Deploy: https://quiz-night-nine.vercel.app/
+🔗 Repository: https://github.com/hubdanielcode/QuizNight
